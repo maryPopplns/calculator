@@ -1,3 +1,5 @@
+import { eventListenerGenerator } from "./eventListenerGenerator.js";
+
 function buttonGenerator() {
   const CALCULATOR = document.querySelector(".calculator");
   const BUTTONS = document.createElement("div");
@@ -85,7 +87,14 @@ function buttonGenerator() {
 
   for (let i = 0; i < BUTTONS.children.length; i++) {
     BUTTONS.children[i].setAttribute("class", "all-btns");
+    if (/[0-9]/.test(BUTTONS.children[i].textContent) === true) {
+      BUTTONS.children[i].className += " digits";
+    } else {
+      BUTTONS.children[i].className += " non-digits";
+    }
   }
+
+  eventListenerGenerator();
 }
 
 export { buttonGenerator };
