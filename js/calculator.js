@@ -1,5 +1,5 @@
 import { screenGenerator } from "./screenGenerator.js";
-import { buttonsGenerator } from "./buttonsGenerator.js";
+import { buttonGenerator } from "./buttonGenerator.js";
 
 function calculator() {
   const BODY = document.querySelector("body");
@@ -10,7 +10,7 @@ function calculator() {
   BODY.prepend(CALCULATOR);
 
   screenGenerator();
-  buttonsGenerator();
+  buttonGenerator();
 }
 
 export { calculator };

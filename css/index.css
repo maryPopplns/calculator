@@ -7,17 +7,53 @@ body {
   flex-direction: column;
   margin: 50px auto;
   height: 600px;
-  width: 500px;
+  width: 400px;
   border: 1em solid black;
   background-color: rgba(159, 171, 31, 0.4);
+  font-family: "Bitter", serif;
 }
 
 .screen {
   height: 100px;
-  width: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+
+#total {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  margin: 0 20px;
+  font-size: 1.25em;
+}
+
+#current {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  margin: 0 20px;
+  font-size: 2em;
 }
 
 .buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   height: 500px;
-  width: 500px;
+  width: 400px;
+}
+
+.all-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#enter {
+  grid-column: 4/6;
 }
