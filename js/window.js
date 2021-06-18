@@ -1,1 +1,3 @@
-const BODY = document.querySelector();
+import { calculator } from "./calculator.js";
+
+calculator();
