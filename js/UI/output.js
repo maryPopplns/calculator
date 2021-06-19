@@ -8,7 +8,6 @@ function output() {
   TOTAL.setAttribute("id", "total");
   // TOTAL.textContent = "total";
   CURRENT.setAttribute("id", "current");
-  // CURRENT.textContent = "";
 
   CALCULATOR.prepend(SCREEN);
   SCREEN.append(CURRENT);
