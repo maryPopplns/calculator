@@ -1,6 +1,6 @@
-import { eventListenerGenerator } from "./eventListenerGenerator.js";
+import { eventListeners } from "./../listeners/eventListeners.js";
 
-function buttonGenerator() {
+function buttons() {
   const CALCULATOR = document.querySelector(".calculator");
   const BUTTONS = document.createElement("div");
   const ONE = document.createElement("div");
@@ -94,7 +94,7 @@ function buttonGenerator() {
     }
   }
 
-  eventListenerGenerator();
+  eventListeners();
 }
 
-export { buttonGenerator };
+export { buttons };

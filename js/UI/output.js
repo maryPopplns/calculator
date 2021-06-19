@@ -1,4 +1,4 @@
-function screenGenerator() {
+function output() {
   const CALCULATOR = document.querySelector(".calculator");
   const SCREEN = document.createElement("output");
   const TOTAL = document.createElement("output");
@@ -8,11 +8,11 @@ function screenGenerator() {
   TOTAL.setAttribute("id", "total");
   // TOTAL.textContent = "total";
   CURRENT.setAttribute("id", "current");
-  // CURRENT.textContent = "current";
+  // CURRENT.textContent = "";
 
   CALCULATOR.prepend(SCREEN);
   SCREEN.append(CURRENT);
   SCREEN.prepend(TOTAL);
 }
 
-export { screenGenerator };
+export { output };
