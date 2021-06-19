@@ -5,7 +5,7 @@ function digitHandler(e) {
   const NUMREGEX = /[0-9]/;
 
   if (NUMREGEX.test(e.target.textContent)) {
-    if (CURRENT.textContent.length > 9) {
+    if (CURRENT.textContent.replace(/\./, "").length > 9) {
       over10Digits();
     } else {
       CURRENT.textContent += e.target.textContent;
