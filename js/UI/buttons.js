@@ -19,7 +19,7 @@ function buttons() {
   const SUBTRACTION = document.createElement("div");
   const MULTIPLICATION = document.createElement("div");
   const DIVISION = document.createElement("div");
-  const REVERSE = document.createElement("div");
+  const INVERTER = document.createElement("div");
   const PERIOD = document.createElement("div");
   const ENTER = document.createElement("div");
 
@@ -39,7 +39,7 @@ function buttons() {
   SUBTRACTION.textContent = "-";
   MULTIPLICATION.textContent = "x";
   DIVISION.textContent = "/";
-  REVERSE.textContent = "-/+";
+  INVERTER.textContent = "-/+";
   PERIOD.textContent = ".";
   ENTER.textContent = "=";
 
@@ -60,7 +60,7 @@ function buttons() {
   SUBTRACTION.setAttribute("id", "subtraction");
   MULTIPLICATION.setAttribute("id", "multiplication");
   DIVISION.setAttribute("id", "division");
-  REVERSE.setAttribute("id", "reverse");
+  INVERTER.setAttribute("id", "inverter");
   PERIOD.setAttribute("id", "period");
   ENTER.setAttribute("id", "enter");
 
@@ -80,7 +80,7 @@ function buttons() {
   BUTTONS.append(NINE);
   BUTTONS.append(MULTIPLICATION);
   BUTTONS.append(DIVISION);
-  BUTTONS.append(REVERSE);
+  BUTTONS.append(INVERTER);
   BUTTONS.append(ZERO);
   BUTTONS.append(PERIOD);
   BUTTONS.append(ENTER);
