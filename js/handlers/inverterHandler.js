@@ -1,4 +1,4 @@
-function inverter() {
+function inverterHandler() {
   const CURRENT = document.querySelector("#current");
   const regex = /-/g;
   if (/-/g.test(CURRENT.textContent) === false) {
@@ -8,4 +8,4 @@ function inverter() {
   }
 }
 
-export { inverter };
+export { inverterHandler };
