@@ -3,7 +3,6 @@ function arithmeticHandler(e) {
   const TOTAL = document.querySelector("#total");
   const REGEX = /^[\+\-\/x]$/g;
 
-  // if (REGEX.test(e.target.textContent) === true) {
   if (REGEX.test(e.target.textContent) && CURRENT.textContent.length > 0) {
     TOTAL.textContent += CURRENT.textContent + ` ${e.target.textContent} `;
     CURRENT.textContent = "";
