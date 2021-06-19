@@ -21,7 +21,7 @@ function buttons() {
   const DIVISION = document.createElement("div");
   const INVERTER = document.createElement("div");
   const PERIOD = document.createElement("div");
-  const ENTER = document.createElement("div");
+  const EVALUATE = document.createElement("div");
 
   ONE.textContent = "1";
   TWO.textContent = "2";
@@ -34,14 +34,14 @@ function buttons() {
   NINE.textContent = "9";
   ZERO.textContent = "0";
   REMOVE_ONE.textContent = "C";
-  CLEAR.textContent = "a/c";
+  CLEAR.textContent = "A/C";
   ADDITION.textContent = "+";
   SUBTRACTION.textContent = "-";
   MULTIPLICATION.textContent = "x";
   DIVISION.textContent = "/";
   INVERTER.textContent = "-/+";
   PERIOD.textContent = ".";
-  ENTER.textContent = "=";
+  EVALUATE.textContent = "=";
 
   BUTTONS.setAttribute("class", "buttons");
   ONE.setAttribute("id", "one");
@@ -62,7 +62,7 @@ function buttons() {
   DIVISION.setAttribute("id", "division");
   INVERTER.setAttribute("id", "inverter");
   PERIOD.setAttribute("id", "period");
-  ENTER.setAttribute("id", "enter");
+  EVALUATE.setAttribute("id", "evaluate");
 
   CALCULATOR.append(BUTTONS);
   BUTTONS.append(ONE);
@@ -83,7 +83,7 @@ function buttons() {
   BUTTONS.append(INVERTER);
   BUTTONS.append(ZERO);
   BUTTONS.append(PERIOD);
-  BUTTONS.append(ENTER);
+  BUTTONS.append(EVALUATE);
 
   for (let i = 0; i < BUTTONS.children.length; i++) {
     BUTTONS.children[i].setAttribute("class", "all-btns");

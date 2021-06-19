@@ -3,6 +3,7 @@ import { decimalHandler } from "../handlers/decimalHandler.js";
 import { inverterHandler } from "../handlers/inverterHandler.js";
 import { clearHandler } from "../handlers/clearHandler.js";
 import { removeOneHandler } from "../handlers/removeOneHandler.js";
+import { arithmeticHandler } from "../handlers/arithmeticHandler.js";
 
 function eventListeners() {
   var CURRENT = document.querySelector("#current");
@@ -19,6 +20,9 @@ function eventListeners() {
   NUMBER_INVERTER.addEventListener("click", inverterHandler);
   REMOVE_ONE.addEventListener("click", removeOneHandler);
   CLEAR.addEventListener("click", clearHandler);
+  for (let i = 0; i < BUTTONS.length; i++) {
+    BUTTONS[i].addEventListener("click", (e) => arithmeticHandler(e));
+  }
 }
 
 export { eventListeners };

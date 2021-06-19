@@ -34,20 +34,14 @@ body {
 
 #total {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-end;
+  text-align: end;
+  white-space: nowrap;
   margin: 0 20px;
   font-size: 1.25em;
 }
 
 #current {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-end;
+  text-align: end;
   margin: 0 20px;
   font-size: 2em;
 }
@@ -89,7 +83,7 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-#enter {
+#evaluate {
   grid-column: 4/6;
   font-size: 4em;
   color: rgb(10, 48, 52);
