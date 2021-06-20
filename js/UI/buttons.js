@@ -37,7 +37,7 @@ function buttons() {
   CLEAR.textContent = "A/C";
   ADDITION.textContent = "+";
   SUBTRACTION.textContent = "-";
-  MULTIPLICATION.textContent = "x";
+  MULTIPLICATION.textContent = "*";
   DIVISION.textContent = "/";
   INVERTER.textContent = "-/+";
   PERIOD.textContent = ".";
