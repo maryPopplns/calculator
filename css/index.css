@@ -1,6 +1,6 @@
 body {
   user-select: none;
-  background-color: #f4c815;
+  background-color: rgb(204, 153, 201, 0.6);
 }
 
 .calculator {
@@ -90,7 +90,9 @@ body {
 
 .color-container {
   display: flex;
-  justify-content: center;
+  margin: auto;
+  background-color: white;
+  width: 500px;
 }
 
 .color-container > div {
@@ -99,21 +101,21 @@ body {
 }
 
 #purple {
-  background-color: #cc99c9;
+  background-color: rgb(204, 153, 201, 0.6);
 }
 
 #blue {
-  background-color: #9ec1cf;
+  background-color: rgb(158, 193, 207, 0.6);
 }
 
 #green {
-  background-color: #9ee09e;
+  background-color: rgb(158, 224, 158, 0.6);
 }
 
 #orange {
-  background-color: #feb144;
+  background-color: rgb(254, 177, 68, 0.6);
 }
 
 #red {
-  background-color: #ff6663;
+  background-color: rgb(255, 102, 99, 0.6);
 }
