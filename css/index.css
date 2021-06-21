@@ -1,6 +1,6 @@
 body {
   user-select: none;
-  background-color: rgb(10, 48, 52);
+  background-color: #f4c815;
 }
 
 .calculator {
@@ -9,7 +9,6 @@ body {
   margin: 50px auto;
   height: 500px;
   width: 400px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.5em;
   font-family: "Bitter", serif;
 }
@@ -68,7 +67,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: grab;
 }
 
@@ -88,4 +86,34 @@ body {
   font-size: 4em;
   color: rgb(10, 48, 52);
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.color-container {
+  display: flex;
+  justify-content: center;
+}
+
+.color-container > div {
+  height: 2em;
+  width: 5em;
+}
+
+#purple {
+  background-color: #cc99c9;
+}
+
+#blue {
+  background-color: #9ec1cf;
+}
+
+#green {
+  background-color: #9ee09e;
+}
+
+#orange {
+  background-color: #feb144;
+}
+
+#red {
+  background-color: #ff6663;
 }
