@@ -161,6 +161,7 @@ body {
 @media (max-height: 450px) {
   .calculator {
     margin: 0 auto;
+    height: 80%;
   }
 
   .screen {
